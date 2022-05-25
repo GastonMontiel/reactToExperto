@@ -9,15 +9,10 @@ const GifExpertApp = () => {
     "Dragon Ball",
   ]);
 
-  //   const handleAdd = () => {
-  //     let item = ["Spiderman"];
-  //     setCategories([...categories, ...item]);
-  //   };
-
   return (
     <>
       <h2> Gif Expert App</h2>
-      <CategoryAdd />
+      <CategoryAdd  setCategories={setCategories}/>
       <hr />
       <ol>
         {categories.map((category) => {
